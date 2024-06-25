@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  .header {
+    background: url('your-blur-photo-url.png') no-repeat center center/cover;
+    width: 100%;
+    padding: 2em 1em;
+    text-align: center;
+    color: white;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .header h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  /* Content Styles (Combined .tab and .tab.active) */
+  .tab {
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 1em;
+    text-align: center;
+  }
+  
+  .tab h2,
+  .tab h3 { /* Consistent heading styles */
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #333; /* Use body text color */
+  }
+  
+  /* Text Input and Button Styles */
+  .tab textarea,
+  .tab input[type="file"] {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 1em;
+    font-size: 1em;
+  }
+  
+  .tab button {
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .tab button:hover {
+    background-color: #1c86ee;
+  }
+  
+  /* Prediction Section Styles */
+  .prediction-section {
+    margin-top: 1em;
+    text-align: center;
+  }
+  
+  .prediction-box {
+    display: inline-block;
+    width: 140px;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .prediction-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .prediction-box p {
+    margin: 0;
+  }
+  
