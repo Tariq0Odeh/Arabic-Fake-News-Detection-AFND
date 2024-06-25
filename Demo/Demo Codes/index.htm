@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeechGuard: Arabic Fake News Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>SpeechGuard</h1>
+        <h2>Welcome to <em>SpeechGuard</em> – your tool for identifying and combating fake news in Arabic text.</h2>
+    </div>
+
+    <div class="tab-content tab" id="text">
+        <h3>Enter Text</h3>
+        <textarea id="textInput" rows="5" cols="50" placeholder="Enter your text here..."></textarea>
+        <button onclick="predict()">Predict</button>
+    </div>
+
+    <div class="prediction-section" id="text-model">
+        <h3>Text Model Prediction</h3>
+        <div id="text-model-boxes">
+            <div class="prediction-box">
+                <p>0%</p><p>Real</p>
+            </div>
+            <div class="prediction-box">
+                <p>0%</p><p>Fake</p>
+            </div>
+            <div class="prediction-box">
+                <p>0%</p><p>Undecided</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
